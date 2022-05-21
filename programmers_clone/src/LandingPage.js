@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from './components/NavBar/NavBar'
-import styled from 'styled-components'
-import { StartButton } from './components/Buttons'
+import { StartButton, WhiteButton, StackButton } from './components/Buttons'
+import { Banner } from './components/Banner'
 
 function LandingPage() {
   return (
@@ -24,8 +24,91 @@ function LandingPage() {
                 그림
             </div>
         </div>
-        <div>
-            채용 중인 포지션
+        <div style={{ marginTop: '80px', display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '82%' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                <div style={{ fontSize: '21px', fontWeight: '700' }}>
+                    채용 중인 포지션
+                </div>
+                <WhiteButton>
+                    포지션 더보기
+                </WhiteButton>
+            </div>
+            <div style={{ width: '100%', marginTop: '15px', marginBottom: '35px', display: 'flex', flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap' }}>
+                <StackButton>
+                    Java
+                </StackButton>
+                <StackButton>
+                    Spring
+                </StackButton>
+                <StackButton>
+                    Node.js
+                </StackButton>
+                <StackButton>
+                    Django
+                </StackButton>
+                <StackButton>
+                    ReactJS
+                </StackButton>
+                <StackButton>
+                    Vue.js
+                </StackButton>
+                <StackButton>
+                    JavaScript
+                </StackButton>
+                <StackButton>
+                    Python
+                </StackButton>
+                <StackButton>
+                    Kotlin
+                </StackButton>
+                <StackButton>
+                    C++
+                </StackButton>
+                <StackButton>
+                    Android
+                </StackButton>
+                <StackButton>
+                    iOS
+                </StackButton>
+                <StackButton>
+                    서버/백엔드
+                </StackButton>
+                <StackButton>
+                    프론트엔드
+                </StackButton>
+                <StackButton>
+                    웹 풀스택
+                </StackButton>
+                <StackButton>
+                    안드로이드 앱
+                </StackButton>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap' }}>
+                <Banner>
+                    d
+                </Banner>
+                <Banner>
+                    d
+                </Banner>
+                <Banner>
+                    d
+                </Banner>
+                <Banner>
+                    d
+                </Banner>
+                <Banner>
+                    d
+                </Banner>
+                <Banner>
+                    d
+                </Banner>
+                <Banner>
+                    d
+                </Banner>
+                <Banner>
+                    d
+                </Banner>
+            </div>
         </div>
     </div>
   )
