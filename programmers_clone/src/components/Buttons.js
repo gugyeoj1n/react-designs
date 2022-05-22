@@ -56,6 +56,7 @@ const StackButton = styled.button`
     margin-top: 4px;
     margin-bottom: 4px;
     transition: all 0.07s linear;
+    overflow: hidden;
     &:hover {
         background: #D6CFFF;
     }

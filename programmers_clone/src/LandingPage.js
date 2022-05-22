@@ -1,7 +1,8 @@
 import React from 'react'
 import NavBar from './components/NavBar/NavBar'
 import { StartButton, WhiteButton, StackButton } from './components/Buttons'
-import { Banner } from './components/Banner'
+import { Banner, CompanyIcon, CompanyDesc, JobName, CompanyName, RequiredStack } from './components/Banner/Banner'
+import { FaUserFriends } from 'react-icons/fa'
 
 function LandingPage() {
   return (
@@ -85,28 +86,27 @@ function LandingPage() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap' }}>
                 <Banner>
-                    d
-                </Banner>
-                <Banner>
-                    d
-                </Banner>
-                <Banner>
-                    d
-                </Banner>
-                <Banner>
-                    d
-                </Banner>
-                <Banner>
-                    d
-                </Banner>
-                <Banner>
-                    d
-                </Banner>
-                <Banner>
-                    d
-                </Banner>
-                <Banner>
-                    d
+                    <CompanyIcon>
+                        <FaUserFriends style={{ width: '50px', height: '50px' }} />
+                    </CompanyIcon>
+                    <CompanyDesc>
+                        <JobName>여자친구 구합니다</JobName>
+                        <CompanyName>나</CompanyName>
+                        <div style={{ display: 'flex', flexDirection: 'row'}}>
+                            <RequiredStack>
+                                연상(동갑도 OK)
+                            </RequiredStack>
+                            <RequiredStack>
+                                무쌍
+                            </RequiredStack>
+                            <RequiredStack>
+                                애교 많음
+                            </RequiredStack>
+                            <RequiredStack>
+                                게으르지 않음
+                            </RequiredStack>
+                        </div>
+                    </CompanyDesc>
                 </Banner>
             </div>
         </div>
