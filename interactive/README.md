@@ -1,6 +1,6 @@
 <p align='center'>
   반응형 웹 디자인 몰아보기 !
-  #
+  =
 </p>
 <p align='center'>
   hover 효과, 커스텀 마우스 커서
