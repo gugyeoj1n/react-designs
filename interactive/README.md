@@ -1,6 +1,4 @@
-<p align='center'>
-  <h1>반응형 웹 디자인 몰아보기 !</h1>
-</p>
+<h1 align='center'>반응형 웹 디자인 몰아보기 !</h1>
 <p align='center'>
   hover 효과, 커스텀 마우스 커서
 </p>
