@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Cursor, CursorControl } from './components/Cursor'
 import { ScrollBack, ScrollItem, ScrollControl } from './components/scrollEvent/scroll'
+import { Eye, EyeBack, EyeControl } from './components/eye'
 
 const BannerItem = styled.div`
     width: 170px;
@@ -26,13 +27,14 @@ const BannerItem = styled.div`
 function LandingPage() {
     CursorControl()
     ScrollControl()
+    EyeControl()
     return (
-        <div style={{ height: '3000px', background: 'silver', display: 'flex', justifyContent: 'center' }}>
+        <div style={{ height: '1300px', background: 'silver', display: 'flex', flexDirection: 'column', alignItems:'center', justifyContent: 'space-between' }}>
             <Cursor id='cursorItem' />
             <ScrollBack>
                 <ScrollItem id='scrollItem'/>
             </ScrollBack>
-            <div style={{ marginTop: '50px', width: '900px', height: '750px', background: 'oldlace', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
+            <div style={{ marginTop: '50px', width: '900px', height: '750px', background: 'none', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
                 <BannerItem color='blueviolet'/>
                 <BannerItem color='aquamarine'/>
                 <BannerItem color='coral'/>
@@ -42,6 +44,14 @@ function LandingPage() {
                 <BannerItem color='rosybrown'/>
                 <BannerItem color='lemonchiffon'/>
                 <BannerItem color='orangered'/>
+            </div>
+            <div style={{ marginBottom: '200px', width: '320px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+                <EyeBack id='eyeback'>
+                    <Eye id='eye'/>
+                </EyeBack>
+                <EyeBack id='eyeback2'>
+                    <Eye id='eye2'/>
+                </EyeBack>
             </div>
         </div>
         
