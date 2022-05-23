@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Cursor, CursorControl } from './components/Cursor'
+import { ScrollBack, ScrollItem, ScrollControl } from './components/scrollEvent/scroll'
 
 const BannerItem = styled.div`
     width: 170px;
@@ -24,11 +25,15 @@ const BannerItem = styled.div`
 
 function LandingPage() {
     CursorControl()
+    ScrollControl()
     return (
         <div style={{ height: '3000px', background: 'silver', display: 'flex', justifyContent: 'center' }}>
             <Cursor id='cursorItem' />
+            <ScrollBack>
+                <ScrollItem id='scrollItem'/>
+            </ScrollBack>
             <div style={{ marginTop: '50px', width: '900px', height: '750px', background: 'oldlace', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
-                <BannerItem/>
+                <BannerItem color='blueviolet'/>
                 <BannerItem color='aquamarine'/>
                 <BannerItem color='coral'/>
                 <BannerItem color='darkseagreen'/>
