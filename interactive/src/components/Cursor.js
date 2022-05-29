@@ -14,7 +14,7 @@ const Cursor = styled.div`
     margin: -15px 0 0 -15px;
     background: navy;
     border-radius: 50%;
-    transition: all .2s linear;
+    transition: all .1s linear;
 `
 const CursorControl = () => {
     const cursorMove = (e) => {
